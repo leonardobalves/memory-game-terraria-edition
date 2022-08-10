@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: monospace, "sans-serif";
+}
+
+body {
+    display: flex;
+    background-color: rgba(219, 219, 219, 0.932);
+    overflow: hidden;
+    margin-top: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-buttons {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    gap: 5%;
+    align-items: center;
+}
+
+.container-play, .container-restart {
+    margin: 10px;
+}
+
+#tabuleiro {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    perspective: 1000px;
+}
+
+ .card {
+    position: relative;
+    margin: 5px;
+    height: calc( 33.333% - 10px);
+    width: calc(25% - 10px);
+    box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.card:active {
+    transform: scale(0.8);
+    transition: transform .2s;
+}
+.card-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px;
+}
+.card-side.front{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card-side.back{
+    backface-visibility: hidden;
+}
+.card-side img{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    background: white;
+}
+.card-side.back img {
+    background: wheat;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}

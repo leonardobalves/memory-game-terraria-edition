@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da memória</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-buttons">
+        <h1>JOGO DA MEMÓRIA</h1>
+        <div class="container-play">
+            <button id="btn-start">Começar</button>
+        </div>
+        <div class="container-restart">
+            <button id="btn-restart">Recomeçar</button>
+        </div>
+        <div id="div-tempo-recorde"></div>
+    </div>
+
+    <div id="tabuleiro">
+        <div class="card" data-card="eye">
+            <div class="card-side front"><img src="./img/Map_Icon_Eye_of_Cthulhu.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="eye">
+            <div class="card-side front"><img src="./img/Map_Icon_Eye_of_Cthulhu.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="king">
+            <div class="card-side front"><img src="./img/Map_Icon_King_Slime.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="king">
+            <div class="card-side front"><img src="./img/Map_Icon_King_Slime.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="golem">
+            <div class="card-side front"><img src="./img/Map_Icon_Golem.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="golem">
+            <div class="card-side front"><img src="./img/Map_Icon_Golem.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="spazmatism">
+            <div class="card-side front"><img src="./img/Map_Icon_Twin_Spazmatism.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="spazmatism">
+            <div class="card-side front"><img src="./img/Map_Icon_Twin_Spazmatism.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="cultist">
+            <div class="card-side front"><img src="./img/Map_Icon_Lunatic_Cultist.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="cultist">
+            <div class="card-side front"><img src="./img/Map_Icon_Lunatic_Cultist.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="queen">
+            <div class="card-side front"><img src="./img/Map_Icon_Queen_Slime.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="queen">
+            <div class="card-side front"><img src="./img/Map_Icon_Queen_Slime.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="skeleton">
+            <div class="card-side front"><img src="./img/Map_Icon_Skeletron_Prime.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="skeleton">
+            <div class="card-side front"><img src="./img/Map_Icon_Skeletron_Prime.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="wall">
+            <div class="card-side front"><img src="./img/Map_Icon_Wall_of_Flesh.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+        <div class="card" data-card="wall">
+            <div class="card-side front"><img src="./img/Map_Icon_Wall_of_Flesh.png"></div>
+            <div class="card-side back"><img src="./img/Copper_Pickaxe.png"></div>
+        </div>
+    </div>
+    <script type="module" charset="utf8" src="./js/script.js"></script>
+</body>
+
+</html>
